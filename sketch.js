@@ -73,7 +73,6 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
- 
   // invisibleGround.visible =false
 
   cloudsGroup = new Group();
@@ -97,7 +96,7 @@ function draw() {
     if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-120) {
       jumpSound.play( )
       trex.velocityY = -10;
-       touches = [];
+      touches = [];
     }
     
     trex.velocityY = trex.velocityY + 0.8
